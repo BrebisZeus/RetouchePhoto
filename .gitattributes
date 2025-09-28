@@ -1,0 +1,56 @@
+# --- Unreal assets (toujours en LFS, binaires) ---
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap   filter=lfs diff=lfs merge=lfs -text
+
+# --- Médias lourds (recommandé en LFS) ---
+*.fbx    filter=lfs diff=lfs merge=lfs -text
+*.abc    filter=lfs diff=lfs merge=lfs -text
+*.gltf   filter=lfs diff=lfs merge=lfs -text
+*.glb    filter=lfs diff=lfs merge=lfs -text
+*.png    filter=lfs diff=lfs merge=lfs -text
+*.jpg    filter=lfs diff=lfs merge=lfs -text
+*.tga    filter=lfs diff=lfs merge=lfs -text
+*.exr    filter=lfs diff=lfs merge=lfs -text
+*.hdr    filter=lfs diff=lfs merge=lfs -text
+*.bmp    filter=lfs diff=lfs merge=lfs -text
+*.wav    filter=lfs diff=lfs merge=lfs -text
+*.aiff   filter=lfs diff=lfs merge=lfs -text
+*.mp3    filter=lfs diff=lfs merge=lfs -text
+*.ogg    filter=lfs diff=lfs merge=lfs -text
+*.mp4    filter=lfs diff=lfs merge=lfs -text
+*.mov    filter=lfs diff=lfs merge=lfs -text
+
+# --- Archives / grosses libs (si vous en stockez) ---
+*.zip    filter=lfs diff=lfs merge=lfs -text
+*.7z     filter=lfs diff=lfs merge=lfs -text
+*.rar    filter=lfs diff=lfs merge=lfs -text
+
+# --- Fichiers texte mergeables (normalisés) ---
+*.uproject  text eol=lf
+*.uplugin   text eol=lf
+*.ini       text eol=lf
+*.cfg       text eol=lf
+*.txt       text eol=lf
+*.md        text eol=lf
+*.csv       text eol=lf
+*.json      text eol=lf
+*.xml       text eol=lf
+*.yaml      text eol=lf
+*.bat       text eol=crlf
+*.ps1       text eol=crlf
+*.sh        text eol=lf
+
+# Code
+*.h         text eol=lf
+*.hpp       text eol=lf
+*.c         text eol=lf
+*.cpp       text eol=lf
+*.cc        text eol=lf
+*.cs        text eol=lf
+*.usf       text eol=lf
+*.ush       text eol=lf
+
+# (Optionnel) fusion "union" pour les .ini afin de réduire les conflits
+# Désactivez si votre équipe préfère les merges stricts.
+#*.ini merge=union
+
