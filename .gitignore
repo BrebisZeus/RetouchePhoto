@@ -1,0 +1,60 @@
+# --- Unreal generated ---
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Plugins: garder le code & .uplugin, ignorer artefacts de build
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+
+# (Optionnel) Projets examples/plugins tiers lourds
+Plugins/*/Content/*/DerivedDataCache/
+
+# --- IDE / OS junk ---
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+.DS_Store
+Thumbs.db
+*.log
+*.dmp
+
+# --- Build artifacts (générés ailleurs) ---
+*.obj
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.exe
+*.dll
+*.lib
+*.app
+*.dylib
+
+# --- Crash/Profiling ---
+*.gpuprofile
+*.udebugger
+*.dump
+
+# --- Optional: ignore local config overrides ---
+# Saved/Config/Windows/
+# Saved/Config/*
+
+# --- Keep these tracked even s’ils matchent des règles ci-dessus ---
+!*.uproject
+!*.uplugin
+!Config/**        # partage les .ini du projet
+!Content/**       # vos assets (mettez ces extensions en LFS)
+!Source/**        # code
+!Plugins/**       # plugins du projet (hors Binaries/Intermediate/Saved)
+
